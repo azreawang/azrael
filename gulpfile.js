@@ -9,6 +9,10 @@ const autoprefixer = require('gulp-autoprefixer')
 
 // 3. 导入 gulp-uglify 这个第三方模块
 const uglify = require('gulp-uglify')
+<<<<<<< HEAD
+=======
+
+>>>>>>> 检测文件是否正常上传
 // 3-2. 导入 gulp-babel 这个第三方模块
 const babel = require('gulp-babel')
 
@@ -21,8 +25,11 @@ const del = require('del')
 // 8. 导入 gulp-webserver 这个第三方模块
 const webserver = require('gulp-webserver')
 
+<<<<<<< HEAD
 const sass = require('gulp-sass')
 
+=======
+>>>>>>> 检测文件是否正常上传
 // 2. 先写一个打包 css 的方法
 const cssHandler = () => {
   return gulp.src('./src/css/*.css')   // 找到 src 目录下 css 目录下 所有后缀为 .css 的文件
@@ -77,7 +84,11 @@ const delHandler = () => {
 const serverHandler = () => {
   return gulp.src('./dist') // 找到我要打开的页面的文件夹, 把这个文件夹当作网站根目录
              .pipe(webserver({ // 需要一些配置项
+<<<<<<< HEAD
                host: 'www.azrael.com', // 域名, 这个域名可以自定义
+=======
+               host: 'www.azrael.com', // 域名, 这个域名可以自                                                       定义
+>>>>>>> 检测文件是否正常上传
                port: 8080, // 端口号, 0 ~ 65535, 尽量不适用 0 ~ 1023
                open: './pages/index.html', // 你默认打开的首页, 从 dist 下面的目录开始书写
                livereload: true, // 自动刷新浏览器 - 热重启
@@ -90,13 +101,18 @@ const serverHandler = () => {
                    target: 'http://127.0.0.1/test.php' // 目标, 你要代理的地址
                  },
                  {
+<<<<<<< HEAD
                    source: '/azrael',
+=======
+                   source: '/azrael2',
+>>>>>>> 检测文件是否正常上传
                    target: 'http://127.0.0.1/xxx.php'
                  }
                ]
              })) // 开启服务器
 }
 
+<<<<<<< HEAD
 const sassHandler = () => {
   return gulp.src('./src/sass/*.scss')
             .pipe(sass())
@@ -104,6 +120,8 @@ const sassHandler = () => {
             .pipe(cssmin())
             .pipe(gulp.dest('./dist/sass'))
 }
+=======
+>>>>>>> 检测文件是否正常上传
 
 // 9. 自动监控文件
 //    监控 src 下下面的文件, 只要一修改, 就执行对应的任务
@@ -115,7 +133,10 @@ const watchHandler = () => {
   gulp.watch('./src/pages/*.html', htmlHandler)
   gulp.watch('./src/lib/**', libHandler)
   gulp.watch('./src/images/**', imgHandler)
+<<<<<<< HEAD
   gulp.watch('./src/sass/*.scss', sass)
+=======
+>>>>>>> 检测文件是否正常上传
 }
 
 
