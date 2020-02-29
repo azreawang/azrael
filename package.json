@@ -1,0 +1,21 @@
+{
+  "name": "azrael",
+  "version": "1.0.0",
+  "description": "我的电商平台",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2"
+  }
+}
