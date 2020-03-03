@@ -21,8 +21,6 @@ const del = require('del')
 // 8. 导入 gulp-webserver 这个第三方模块
 const webserver = require('gulp-webserver')
 
-const sass = require('gulp-sass')
-
 // 2. 先写一个打包 css 的方法
 const cssHandler = () => {
   return gulp.src('./src/css/*.css')   // 找到 src 目录下 css 目录下 所有后缀为 .css 的文件
@@ -81,28 +79,7 @@ const serverHandler = () => {
                port: 8080, // 端口号, 0 ~ 65535, 尽量不适用 0 ~ 1023
                open: './pages/index.html', // 你默认打开的首页, 从 dist 下面的目录开始书写
                livereload: true, // 自动刷新浏览器 - 热重启
-               // 所有的代理配置都在 proxies 里面
-               proxies: [
-                 // 每一个代理配置就是一个对象
-                 {
-                   source: '/azrael', // 源, 你的代理标识符
-                   // 你直接请求下面这个地址压根也拿不到东西, 因为跨域了
-                   target: 'http://127.0.0.1/test.php' // 目标, 你要代理的地址
-                 },
-                 {
-                   source: '/azrael',
-                   target: 'http://127.0.0.1/xxx.php'
-                 }
-               ]
              })) // 开启服务器
-}
-
-const sassHandler = () => {
-  return gulp.src('./src/sass/*.scss')
-            .pipe(sass())
-            .pipe(autoprefixer())
-            .pipe(cssmin())
-            .pipe(gulp.dest('./dist/sass'))
 }
 
 // 9. 自动监控文件
@@ -115,7 +92,6 @@ const watchHandler = () => {
   gulp.watch('./src/pages/*.html', htmlHandler)
   gulp.watch('./src/lib/**', libHandler)
   gulp.watch('./src/images/**', imgHandler)
-  gulp.watch('./src/sass/*.scss', sass)
 }
 
 
@@ -130,7 +106,7 @@ const watchHandler = () => {
 //   要在删除完毕 dist 以后, 在执行 css/js/html/... 之类的压缩转移任务
 module.exports.default = gulp.series(
   delHandler,
-  gulp.parallel(cssHandler, jsHandler, htmlHandler, imgHandler, libHandler, sassHandler),
+  gulp.parallel(cssHandler, jsHandler, htmlHandler, imgHandler, libHandler),
   serverHandler,
   watchHandler
 )
