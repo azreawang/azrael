@@ -250,8 +250,13 @@
   }
 
   #banner>.category-first>.nav-box>.nav-title{
+<<<<<<< HEAD
    float: left;
    width: 80px;
+=======
+   width: 80px;
+   float: left;
+>>>>>>> d2424b59277f60c5718f125fac5bad830f9c40a6
    line-height: 24px;
    margin-top: 20px;
    margin-left: 30px;
@@ -259,6 +264,7 @@
    font-size: 14px;
   }
 
+<<<<<<< HEAD
   #banner>.category-first>.nav-box>.nav-details{
     float: left;
   }
@@ -310,6 +316,23 @@
         transform: translateY(-3px);
     }
 
+=======
+  #banner>.category-first>.nav-box>.nav-details>li{
+   float: left;
+   width: 300px;
+   line-height: 24px;
+   margin-top: 20px;
+   margin-left: 30px;
+   font-size: 14px;
+   }
+
+   #banner>.category-first>.nav-box>.nav-details>li>a>img{
+    width: 20px;
+    height: 30px;
+    display: inline-block;
+    }
+
+>>>>>>> d2424b59277f60c5718f125fac5bad830f9c40a6
 
 
 

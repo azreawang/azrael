@@ -1,6 +1,7 @@
 {
   "name": "azrael",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +11,23 @@
     "电商项目"
   ],
   "author": "azrael",
+=======
+<<<<<<< HEAD
+  "description": "我的电商平台",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+=======
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+>>>>>>> 检测文件是否正常上传
+  "author": "",
+>>>>>>> d2424b59277f60c5718f125fac5bad830f9c40a6
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.4.1",
@@ -18,14 +36,27 @@
   "devDependencies": {
     "@babel/core": "^7.8.6",
     "@babel/preset-env": "^7.8.6",
+<<<<<<< HEAD
     "del": "^5.1.0",
+<<<<<<< HEAD
     "gulp": "^4.0.2",
     "cssmin": "^0.4.3",
+=======
+    "gulp": "^4.0.2"
+=======
+    "cssmin": "^0.4.3",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+>>>>>>> d2424b59277f60c5718f125fac5bad830f9c40a6
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webserver": "^0.9.1"
+<<<<<<< HEAD
+=======
+>>>>>>> 检测文件是否正常上传
+>>>>>>> d2424b59277f60c5718f125fac5bad830f9c40a6
   }
 }
