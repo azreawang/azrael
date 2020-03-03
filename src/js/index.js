@@ -33,6 +33,7 @@ $(function () {
         success: function (res) {
             let str = '';
             res.forEach(item => {
+                
                 str += `<li style="background-image: url(${item.url});">${item.name}</li>`
             })
             // 4-3. 填充到 nav_top 里面的 ul 里面
