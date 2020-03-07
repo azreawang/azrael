@@ -7,21 +7,44 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>360会员商城</title>
   <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="../css/com.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
+
+  <div id="register">
+    <div class="register">
+      <p>360账号注册<span class="exit">X</span></p>
+      <p>
+        <input type="text" placeholder="手机号/用户名/邮箱" name="rg-username">
+        <input type="password" placeholder="密码" name="rg-password">
+        <input type="button" value="注册" class="btn-register">
+      </p>
+    </div>
+  </div>
+  <div id="login">
+    <div class="login">
+      <p>360账号登录<span class="exit">X</span></p>
+      <p>
+        <input type="text" placeholder="手机号/用户名/邮箱" name="lg-username">
+        <input type="password" placeholder="密码" name="lg-password">
+        <input type="button" value="登录" class="btn-login">
+      </p>
+    </div>
+  </div>
   <div id="head">
     <div class="container .wrapper">
       <ul>
-        <li>帮助中心</li>
-        <li>收藏</li>
-        <li>360官网</li>
+        <li><a href="http://mall.360.cn/help">帮助中心</a></li>
+        <li><a href="javascript:;">收藏</a></li>
+        <li><a href="./index.html">360官网</a></li>
       </ul>
       <ul>
-        <li>登录</li>
-        <li>注册</li>
+        <li class="lg">登录</li>
+        <li class="rg">注册</li>
         <li class="code">360手机商城
           <div class="download wrapper">
             <img src="../images/t012b6178dda17bbe35.png" alt="">
@@ -38,9 +61,9 @@
   <div id="nav">
     <div class="container">
       <ul class="wrapper">
-        <li><a href=""><img src="../images/t018e313581b1fadd62.png" alt=""></a></li>
-        <li><a href="">领劵中心</a></li>
-        <li><a href="">社区</a></li>
+        <li><a href="./index.html"><img src="../images/t018e313581b1fadd62.png" alt=""></a></li>
+        <li><a href="https://mall.360.cn/coupon/centerpage?track=PCLQ">领劵中心</a></li>
+        <li><a href="https://bbs.360.cn/?track=PCSQ">社区</a></li>
       </ul>
       <ul>
         <input type="search"><i></i>
@@ -76,7 +99,6 @@
         <li>家用电器</li>
       </div>
       <div class="nav-box wrapper">
-<<<<<<< HEAD
         <!-- <div class="nav-title">
           智能家居&nbsp;&nbsp;|
         </div>
@@ -87,30 +109,51 @@
     </ul>
   </div>
   <div id="event" class="container">
-    <p >热门活动</p>
+    <p>热门活动</p>
     <div class="event-links">
-      <a href="https://mall.360.cn/ac/38LRJ?track=RM01"><img src="https://p4.ssl.qhimg.com/t0128d70da951401767.webp" alt=""></a>
-      <a href="https://mall.360.cn/ac/HXJ?track=RM03"><img src="https://p0.ssl.qhimg.com/t01524cecfe2b319213.webp" alt=""></a>
-      <a href="https://mall.360.cn/ac/ZNAF?track=RM04"><img src="https://p2.ssl.qhimg.com/t01d0742b9b7d2acacf.webp" alt=""></a>
-      <a href="https://mall.360.cn/ac/ZNAF?track=RM04"><img src="https://p1.ssl.qhimg.com/t01d472cd7c11315b7d.webp" alt=""></a>
+      <a href="https://mall.360.cn/ac/38LRJ?track=RM01"><img src="https://p4.ssl.qhimg.com/t0128d70da951401767.webp"
+          alt=""></a>
+      <a href="https://mall.360.cn/ac/HXJ?track=RM03"><img src="https://p0.ssl.qhimg.com/t01524cecfe2b319213.webp"
+          alt=""></a>
+      <a href="https://mall.360.cn/ac/ZNAF?track=RM04"><img src="https://p2.ssl.qhimg.com/t01d0742b9b7d2acacf.webp"
+          alt=""></a>
+      <a href="https://mall.360.cn/ac/ZNAF?track=RM04"><img src="https://p1.ssl.qhimg.com/t01d472cd7c11315b7d.webp"
+          alt=""></a>
     </div>
-    <div><a href="https://mall.360.cn/ac/FYDZZ?track=Tlfy"><img src="https://p5.ssl.qhimg.com/t016956e421333d5306.webp" alt=""></a></div>
+    <div><a href="https://mall.360.cn/ac/FYDZZ?track=Tlfy"><img src="https://p5.ssl.qhimg.com/t016956e421333d5306.webp"
+          alt=""></a></div>
   </div>
-=======
-        <div class="nav-title">
-          智能家居&nbsp;&nbsp;|
-          <div class="nav-details">
-            <li><a href=""><img src="../images/t018e313581b1fadd62.png" alt="">摄像机</a></li>
-          </div>
-        </div>
+  <div id="countdown" class="container">
+    <p>
+      <span>限时购 10:00场</span>
+    </p>
+    <div class="hot-details">
+      <div><a href="https://mall.360.cn/shop/seckill?track=PCXSG"><img
+            src="https://p5.ssl.qhimg.com/t01f8da11a97bc0eb13.webp" alt=""></a></div>
+      <div class="shopping">
+        <!-- <ul>
+          <li><img src="https://p2.ssl.qhimg.com/t011b61602318502a8d.webp" alt=""></li>
+          <li>
+            <p>【新品】360 智能摄像机红色警戒标准版AW2L</p>
+            <p>
+              <span>¥179</span>
+              <span><s>¥199</s></span>
+            </p>
+            <p>马上抢</p>
+          </li>
+        </ul> -->
       </div>
-    </ul>
+    </div>
   </div>
->>>>>>> d2424b59277f60c5718f125fac5bad830f9c40a6
+
+
 
   <script src="../lib/jquery/dist/jquery.min.js"></script>
   <script src="../lib/swiper/js/swiper.min.js"></script>
+  <script src="../js/com.js"></script>
+  <script src="../js/login.js"></script>
   <script src="../js/index.js"></script>
+
 </body>
 
 </html>

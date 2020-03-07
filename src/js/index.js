@@ -1,4 +1,3 @@
-
 $(function () {
     var mySwiper = new Swiper('.swiper-container', {
         loop: true, // 循环模式选项
@@ -33,7 +32,6 @@ $(function () {
         success: function (res) {
             let str = '';
             res.forEach(item => {
-                
                 str += `<li style="background-image: url(${item.url});">${item.name}</li>`
             })
             // 4-3. 填充到 nav_top 里面的 ul 里面
@@ -51,8 +49,8 @@ $(function () {
                     // // 5-2. 找到要渲染的数组
                     const cate = res[index].cate
                     // // 5-3. 用我们找到的数组把 nav_box 位置渲染了就可以了
-                    let str = ""
-                    str = ` <div class="nav-title">
+                    
+                    let str = ` <div class="nav-title">
                               <a href="${cate.cate_url}">  ${cate.name}&nbsp;&nbsp;| </a>
                             </div>
                             <div class="nav-details wrapper"></div> `
@@ -64,11 +62,8 @@ $(function () {
                             `
                         $(".nav-details").append(li);
                     })
-
                     // 5-5. 填充到页面里面
-
                 })
-
             // 4-4. 给 nav-box 添加一个移入移出事件
             $('.nav-box')
                 .on({
@@ -78,5 +73,42 @@ $(function () {
         }
     })
 
-
-})
+    $.ajax({
+        url: '../lib/detail.json',
+        dataType: 'json',
+        success: function (res) {
+            //获取ajax回复报文res后渲染数据
+            res.forEach(item => {
+                let ul = 
+                    `
+                    <ul data-id="${item.list_id}">
+                        <li><img src="${item.img_url}" alt=""></li>
+                        <li>
+                            <p>${item.list_name}</p>
+                            <p>
+                            <span>¥${item.price}</span>
+                            <span><s>¥${item.cost_price}</s></span>
+                            </p>
+                            <p>马上抢</p>
+                        </li>
+                    </ul>
+                    `
+                $(".shopping").append(ul)
+            }) 
+            
+            $(".shopping").on("click","ul",function(){
+                //事件委托获取当前点击商品的id
+                const id = $(this).data("id");
+                let data = ""
+                res.forEach(item =>{
+                    if(item.list_id === id){
+                        data = item;
+                    }
+                    return data;
+                })
+                localStorage.setItem("goods_info",JSON.stringify(data))
+                location.href = "http://www.azrael.com:8080/pages/detail.html"
+            })
+        }
+    })
+});

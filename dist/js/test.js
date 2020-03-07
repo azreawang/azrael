@@ -1,1 +1,1 @@
-"use strict";console.log(1);
+"use strict";var a=require("./login.js");a.lg();

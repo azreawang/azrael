@@ -3,112 +3,377 @@
         "id": 1,
         "name": "智能设备",
         "url": "../images/路由器.png",
-        "cate": [
-            {
-                "name": "智能家居",
-                "cate_url":"https://mall.360.cn/search/?q=*&cate=101879",
-                "list": [
-                    {
-                        "list_name": "摄像机",
-                        "list_url":"https://mall.360.cn/search/?q=摄像机",
-                        "img_url":"https://p3.ssl.qhimg.com/t01c8169ecc14f6af6c.webp"
-                    },
-                    {
-                        "list_name": "可视门铃",
-                        "list_url":"https://mall.360.cn/search/?q=%E9%97%A8%E9%93%83",
-                        "img_url":"https://p2.ssl.qhimg.com/t0149703108b20ae37e.webp"
-                    }, {
-                        "list_name": "路由器",
-                        "list_url":"https://mall.360.cn/search/?q=*&cate=102242",
-                        "img_url":"https://p4.ssl.qhimg.com/t01e77d5fbf93871692.webp"
-                    }, {
-                        "list_name": "扫地机",
-                        "list_url":"https://mall.360.cn/search/?q=*&cate=103118",
-                        "img_url":"https://p0.ssl.qhimg.com/t01428f478fbe90648f.webp"
-                    }, {
-                        "list_name": "扫地机配件",
-                        "list_url":"https://mall.360.cn/search/?q=扫地机配件",
-                        "img_url":"https://p.ssl.qhmsg.com/t010ee72f206d28f80f.webp"
-                    }, {
-                        "list_name": "台灯",
-                        "list_url":"https://mall.360.cn/search/?q=台灯",
-                        "img_url":"https://p2.ssl.qhimg.com/t01fe9d95a5d3f4ccc9.webp"
-                    }
-                ]
-            },
-            {
-                "name": "智能手表",
-                "cate_url":"https://mall.360.cn/search/?q=*&cate=104168",
-                "list": [
-                    {
-                        "list_name": "儿童手表",
-                        "list_url":"https://mall.360.cn/search/?q=*&cate=104168",
-                        "img_url":"https://p1.ssl.qhimg.com/t01980c183bd16a3222.webp"
-                    },
-                    {
-                        "list_name": "老人手表",
-                        "list_url":"https://mall.360.cn/shop/item?item_id=5d6389d63f31c32cf006513f",
-                        "img_url":"https://p0.ssl.qhimg.com/t01ef12d9ecfef884e3.webp"
-                    }
-                ]
-            }
-        ]
+        "cate": {
+            "name": "智能家居",
+            "cate_url": "https://mall.360.cn/search/?q=*&cate=101879",
+            "list": [
+                {   
+                    "list_id":101,
+                    "list_name": "摄像机",
+                    "list_url": "https://mall.360.cn/search/?q=摄像机",
+                    "img_url": "https://p3.ssl.qhimg.com/t01c8169ecc14f6af6c.webp"
+                },
+                {   
+                    "list_id":102,
+                    "list_name": "可视门铃",
+                    "list_url": "https://mall.360.cn/search/?q=%E9%97%A8%E9%93%83",
+                    "img_url": "https://p2.ssl.qhimg.com/t0149703108b20ae37e.webp"
+                },
+                {   
+                    "list_id":103,
+                    "list_name": "路由器",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102242",
+                    "img_url": "https://p4.ssl.qhimg.com/t01e77d5fbf93871692.webp"
+                },
+                {   
+                    "list_id":104,
+                    "list_name": "扫地机",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=103118",
+                    "img_url": "https://p0.ssl.qhimg.com/t01428f478fbe90648f.webp"
+                },
+                {   
+                    "list_id":105,
+                    "list_name": "扫地机配件",
+                    "list_url": "https://mall.360.cn/search/?q=扫地机配件",
+                    "img_url": "https://p.ssl.qhmsg.com/t010ee72f206d28f80f.webp"
+                },
+                {   
+                    "list_id":106,
+                    "list_name": "台灯",
+                    "list_url": "https://mall.360.cn/search/?q=台灯",
+                    "img_url": "https://p2.ssl.qhimg.com/t01fe9d95a5d3f4ccc9.webp"
+                },
+                {   
+                    "list_id":107,
+                    "list_name": "儿童手表",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=104168",
+                    "img_url": "https://p1.ssl.qhimg.com/t01980c183bd16a3222.webp"
+                },
+                {
+                       
+                    "list_id":108,
+                    "list_name": "老人手表",
+                    "list_url": "https://mall.360.cn/shop/item?item_id=5d6389d63f31c32cf006513f",
+                    "img_url": "https://p0.ssl.qhimg.com/t01ef12d9ecfef884e3.webp"
+                }
+            ]
+        }
     },
     {
         "id": 2,
         "name": "家用电器",
         "url": "../images/电器.png",
-        "cate": [
-            {
-                "name": "电器优选",
-                "list": [
-                    {
-                        "list_name": "厨房小电",
-                        "list_url":"http://mall.360.cn/search?q=*&cate=103127,103130,103128,103751,102778,102247,103131,103132,103748,103755",
-                        "img_url":"https://p0.ssl.qhimg.com/t010e8fb443dec70f2d.webp"
-                    },
-                    {
-                        "list_name": "生活电器",
-                        "list_url":"",
-                        "img_url":""
-                    },
-                    {
-                        "list_name": "呵护健康",
-                        "list_url":"",
-                        "img_url":""
-                    }
-                ]
-            }
-        ]
+        "cate": {
+            "name": "电器优选",
+            "cate_url": " https://mall.360.cn/search/?q=*&cate=102228",
+            "list": [
+                {   
+                    "list_id":201,
+                    "list_name": "厨房小电",
+                    "list_url": "http://mall.360.cn/search?q=*&cate=103127,103130,103128,103751,102778,102247,103131,103132,103748,103755",
+                    "img_url": "https://p0.ssl.qhimg.com/t010e8fb443dec70f2d.webp"
+                },
+                {   
+                    "list_id":202,
+                    "list_name": "生活电器",
+                    "list_url": "http://mall.360.cn/search?q=*&cate=103121,101968,103119,102782,103734,102807,103088,102789,103124,103126",
+                    "img_url": "https://p3.ssl.qhimg.com/t01701f5eb58f8ba131.webp"
+                },
+                {
+                    "list_id":203,
+                    "list_name": "呵护健康",
+                    "list_url": "http://mall.360.cn/search?q=*&cate=103768,103765,102249,101842,102254,102781,102786,103088,103762,103766,102781",
+                    "img_url": "https://p0.ssl.qhimg.com/t010d882030c7164755.webp"
+                }
+            ]
+        }
     },
     {
         "id": 3,
         "name": "电脑办公",
-        "url": "../images/盾牌.png"
+        "url": "../images/盾牌.png",
+        "cate": {
+            "name": "电脑外设",
+            "cate_url": "https://mall.360.cn/search/?q=*&cate=102021",
+            "list": [
+                {
+                    "list_id":301,
+                    "list_name": "笔记本",
+                    "list_url": "http://mall.360.cn/search?q=*&cate=101928,102011",
+                    "img_url": "https://p0.ssl.qhimg.com/t016b2d3b9f3f0bfd6b.webp"
+                },
+                {
+                    "list_id":302,
+                    "list_name": "鼠标",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102022",
+                    "img_url": "https://p1.ssl.qhimg.com/t01e8873a4966b5118f.webp"
+                },
+                {
+                    "list_id":303,
+                    "list_name": "键盘",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102259,104178",
+                    "img_url": "https://p1.ssl.qhimg.com/t0127ff0b48947a80da.webp"
+                },
+                {
+                    "list_id":304,
+                    "list_name": "耳机",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102806",
+                    "img_url": "https://p2.ssl.qhimg.com/t01024dcc7997e6ad8c.webp"
+                },
+                {
+                    "list_id":305,
+                    "list_name": "音箱",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102809",
+                    "img_url": "https://p4.ssl.qhimg.com/t01b5490b814ec84012.webp"
+                },
+                {
+                    "list_id":306,
+                    "list_name": "硬盘/U盘",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=104144,101957",
+                    "img_url": "https://p4.ssl.qhimg.com/t018465c841e465aa96.webp"
+                },
+                {
+                    "list_id":307,
+                    "list_name": "存储卡",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102230",
+                    "img_url": "https://p0.ssl.qhimg.com/t018336d9459876227a.webp"
+                },
+                {
+                    "list_id":308,
+                    "list_name": "鼠标垫",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=104179",
+                    "img_url": "https://p3.ssl.qhimg.com/t01f6fe4bd64e8e6b03.webp"
+                }
+            ]
+        }
     },
     {
         "id": 4,
         "name": "数码配件",
-        "url": "../images/箱子.png"
+        "url": "../images/箱子.png",
+        "cate": {
+            "name": "潮流数码",
+            "cate_url": "https://mall.360.cn/search/?q=*&cate=102785",
+            "list": [
+                {
+                    "list_id":401,
+                    "list_name": "蓝牙耳机",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=101750",
+                    "img_url": "https://p0.ssl.qhimg.com/t01b167e622effb8b09.webp"
+                },
+                {
+                    "list_id":402,
+                    "list_name": "线控耳机",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=101749",
+                    "img_url": "https://p2.ssl.qhimg.com/t012d4e71e4a17db407.webp"
+                },
+                {
+                    "list_id":403,
+                    "list_name": "电纸书",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102788",
+                    "img_url": "https://p1.ssl.qhimg.com/t0123a02acee811b0f8.webp"
+                },
+                {
+                    "list_id":404,
+                    "list_name": "智能投影",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102818",
+                    "img_url": "https://p3.ssl.qhimg.com/t016b6e653da88759a2.webp"
+                },
+                {
+                    "list_id":405,
+                    "list_name": "翻译机",
+                    "list_url": "https://mall.360.cn/search/?q=翻译",
+                    "img_url": "https://p1.ssl.qhimg.com/t01db5b847819614e73.webp"
+                },
+                {
+                    "list_id":406,
+                    "list_name": "云录卡",
+                    "list_url": "https://mall.360.cn/search/?q=云录卡",
+                    "img_url": "https://p.ssl.qhmsg.com/t0103017d69b856a2be.webp"
+                },
+                {
+                    "list_id":407,
+                    "list_name": "手机壳",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=101751",
+                    "img_url": "https://p3.ssl.qhimg.com/t01d12ec074f0e673ba.webp"
+                },
+                {
+                    "list_id":408,
+                    "list_name": "移动电源",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=101956",
+                    "img_url": "https://p0.ssl.qhimg.com/t011c3f7a8a6f3a82b7.webp"
+                },
+                {
+                    "list_id":409,
+                    "list_name": "其它配件",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=101754",
+                    "img_url": "https://p.ssl.qhimg.com/t0133ef6e85614e0d4e.webp"
+                }
+            ]
+        }
     },
     {
         "id": 5,
         "name": "汽车用品",
-        "url": "../images/汽车.png"
+        "url": "../images/汽车.png",
+        "cate": {
+            "name": "行车安全",
+            "cate_url": "https://mall.360.cn/search/?q=*&cate=103771",
+            "list": [
+                {
+                    "list_id":501,
+                    "list_name": "行车记录仪",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102341",
+                    "img_url": "https://p2.ssl.qhimg.com/t01ffd32380244e3647.webp"
+                },
+                {
+                    "list_id":502,
+                    "list_name": "车载电器",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102345",
+                    "img_url": "https://p.ssl.qhimg.com/t016bf715eca407a639.webp"
+                },
+                {
+                    "list_id":503,
+                    "list_name": "胎压监测",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=104236",
+                    "img_url": "https://p1.ssl.qhimg.com/t014f7dd4c96b8de380.webp"
+                },
+                {
+                    "list_id":504,
+                    "list_name": "安全座椅",
+                    "list_url": "https://mall.360.cn/search/?q=安全座椅",
+                    "img_url": "https://p.ssl.qhimg.com/t01a85c8da32f600a5f.webp"
+                }
+            ]
+        }
     },
     {
         "id": 6,
         "name": "儿童玩具",
-        "url": "../images/购物车.png"
+        "url": "../images/购物车.png",
+        "cate": {
+            "name": "玩具专区",
+            "cate_url": "https://mall.360.cn/search/?q=*&cate=102492",
+            "list": [
+                {
+                    "list_id":601,
+                    "list_name": "绘画板",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102787",
+                    "img_url": "https://p2.ssl.qhimg.com/t015b3280b65f8bcb11.webp"
+                },
+                {
+                    "list_id":602,
+                    "list_name": "积木",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102494",
+                    "img_url": "https://p0.ssl.qhimg.com/t0185617ee0f3429d53.webp"
+                },
+                {
+                    "list_id":603,
+                    "list_name": "毛绒玩具",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102500",
+                    "img_url": "https://p1.ssl.qhimg.com/t019983eb57ae4daa4f.webp"
+                },
+                {
+                    "list_id":604,
+                    "list_name": "早教/智能玩具",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=102991",
+                    "img_url": "https://p1.ssl.qhimg.com/t0172714a6cef1c4ae3.webp"
+                },
+                {
+                    "list_id":605,
+                    "list_name": "滑板车",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=104536",
+                    "img_url": "https://p3.ssl.qhimg.com/t010abbc94f1b8ecdd1.webp"
+                }
+            ]
+        }
     },
     {
         "id": 7,
         "name": "家居家纺",
-        "url": "../images/沙发.png"
+        "url": "../images/沙发.png",
+        "cate": {
+            "name": "家居家纺",
+            "cate_url": "https://mall.360.cn/search/?q=*&cate=102387,103049",
+            "list": [
+                {
+                    "list_id":701,
+                    "list_name": "保温杯",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=103050",
+                    "img_url": "https://p0.ssl.qhimg.com/t01e42bee3e08243cf7.webp"
+                },
+                {
+                    "list_id":702,
+                    "list_name": "收纳洗晒",
+                    "list_url": "https://mall.360.cn/search/?q=收纳",
+                    "img_url": "https://p1.ssl.qhimg.com/t01573682b70a972623.webp"
+                },
+                {
+                    "list_id":703,
+                    "list_name": "家饰",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=105262",
+                    "img_url": "https://p0.ssl.qhimg.com/t01db31864ecff6774b.webp"
+                },
+                {
+                    "list_id":704,
+                    "list_name": "其它",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=101838,105432,101954",
+                    "img_url": "https://p.ssl.qhimg.com/t01913fdd02473c4379.webp"
+                },
+                {
+                    "list_id":705,
+                    "list_name": "毯子",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=105543,102411",
+                    "img_url": "https://p4.ssl.qhimg.com/t01a99870f266e9e88f.webp"
+                }
+            ]
+        }
     },
     {
         "id": 8,
         "name": "服饰箱包",
-        "url": "../images/服饰-女装.png"
+        "url": "../images/服饰-女装.png",
+        "cate": {
+            "name": "内衣箱包",
+            "cate_url": "https://mall.360.cn/search/?q=*&cate=103592",
+            "list": [
+                {
+                    "list_id":801,
+                    "list_name": "保暖件套",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=103597",
+                    "img_url": "https://p2.ssl.qhimg.com/t01f3d82d79a0654e62.webp"
+                },
+                {
+                    "list_id":802,
+                    "list_name": "秋衣秋裤",
+                    "list_url": "https://mall.360.cn/search/?q=秋衣秋裤",
+                    "img_url": "https://p2.ssl.qhimg.com/t019e621448fbc2dcdc.webp"
+                },
+                {
+                    "list_id":803,
+                    "list_name": "袜子",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=103070",
+                    "img_url": "https://p3.ssl.qhimg.com/t01fe9a04ba2a08769b.webp"
+                },
+                {
+                    "list_id":804,
+                    "list_name": "双肩包",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=104217",
+                    "img_url": "https://p3.ssl.qhimg.com/t015913047a6f2bcf1e.webp"
+                },
+                {
+                    "list_id":805,
+                    "list_name": "旅行箱包",
+                    "list_url": "https://mall.360.cn/search/?q=*&cate=101765",
+                    "img_url": "https://p4.ssl.qhimg.com/t01ac953ab403679daf.webp"
+                },
+                {
+                    "list_id":806,
+                    "list_name": "儿童箱包",
+                    "list_url": "https://mall.360.cn/search/?q=%E5%84%BF%E7%AB%A5%E7%AE%B1%E5%8C%85&cate=102653",
+                    "img_url": "https://p0.ssl.qhimg.com/t0151129f1e6f71e25e.webp"
+                }
+            ]
+        }
     }
 ]

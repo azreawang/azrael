@@ -1,0 +1,71 @@
+body{
+    position: relative;
+  }
+  
+#login,#register{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    display: none;
+    }
+
+#login>.login,#register>.register{
+    background-color: seashell;
+    width: 360px;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 5px;
+    left: 50%;
+    top: 400px;
+    transform: translateX(-50%);
+}
+
+#login>.login>p:nth-of-type(1),#register>.register>p:nth-of-type(1){
+    height: 70px;
+    line-height: 70px;
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#login>.login>p:nth-of-type(1)>span,#register>.register>p:nth-of-type(1)>span{
+    font-size: 16px;
+    color: #d2d0d0;
+    position: absolute;
+    right: 0;
+    padding:10px  40px 0 0;
+    cursor: pointer;
+}
+
+#login>.login>p:nth-of-type(2)>input,#register>.register>p:nth-of-type(2)>input{
+    font-size: 14px;
+    width: 300px;
+    height: 42px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#login>.login>p:nth-of-type(2)>input:nth-of-type(3),#register>.register>p:nth-of-type(2)>input:nth-of-type(3){
+    border: none;
+    border-color: #36b447;
+    background-color: #36b447;
+    color: #fff;
+}
+
+#login>.login>p:nth-of-type(2)>input:nth-of-type(3):active,#register>.register>p:nth-of-type(2)>input:nth-of-type(3):active{
+    background-color: #23662c;
+}
+
+#login>.login>p:nth-of-type(3)>span,#register>.register>p:nth-of-type(3)>span{
+    display: block;
+    text-align: right;
+    padding: 0 40px;
+    cursor: pointer;
+}
